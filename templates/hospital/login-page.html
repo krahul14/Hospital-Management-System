@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+  {% load static %}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Login</title>
+    <link rel="shortcut icon" href="{%static '/images/fav-icon1.png' %}" />
+    <style type="text/css">
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      table {
+        margin-top: 150px;
+        margin-right: auto;
+      }
+      td {
+        padding: 0px 50px;
+      }
+      figure {
+        padding-bottom: 20px;
+      }
+      figure:hover {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width: 100%">
+      <tr>
+        <td>
+          <a
+            href="/adminlogin"
+            style="text-decoration: none; color: black"
+          >
+            <div
+              style="
+                text-align: center;
+                background-color: whitesmoke;
+                border: 1px solid #dcdcdc;
+              "
+            >
+              <img
+                src="{%static 'images/admin.png' %}"
+                width="360px"
+                height="360px"
+                style="object-fit: fill"
+              />
+              <figure>ADMIN</figure>
+            </div>
+          </a>
+        </td>
+        <td>
+          <a href="/doctorlogin" style="text-decoration: none; color: black">
+            <div
+              style="
+                text-align: center;
+                background-color: white;
+                background-color: whitesmoke;
+                border: 1px solid #dcdcdc;
+              "
+            >
+              <img
+                src="{%static 'images/doctor.png' %}"
+                width="360px"
+                height="360px"
+                style="object-fit: fill"
+              />
+              <figure>DOCTOR</figure>
+            </div>
+          </a>
+        </td>
+        <td>
+          <a href="/patientlogin" style="text-decoration: none; color: black">
+            <div
+              style="
+                text-align: center;
+                background-color: white;
+                background-color: whitesmoke;
+                border: 1px solid #dcdcdc;
+              "
+            >
+              <img
+                src="{%static 'images/patient.jpg' %}"
+                width="360px"
+                height="360px"
+                style="object-fit: fill"
+              />
+              <figure>PATIENT</figure>
+            </div>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

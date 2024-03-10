@@ -1,0 +1,39 @@
+{% extends 'hospital/admin_base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block content %}
+<html>
+
+    <body>
+        <form method="post">
+            {% csrf_token %}
+            <div class="container register-form">
+              <div class="form">
+                <div class="note">
+                  <p><h1>Appointment Date Change</h1></p>
+                </div>
+                      <div class="form-group">
+                      <div class="input_pox">
+                        <span class="datails">Date</span>
+                        <input type="date" placeholder="appointment date" value="date" name="date" required />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input_pox">
+                        <span class="datails">time</span>
+                        <input type="time" placeholder="appointment time" value="time" name="time" required />
+                      </div>
+                    </div>
+                </div>
+                <button type="submit" class="btnSubmit">Book</button>
+              </div>
+                    </div>
+          
+                  
+              </div>
+            </div>
+          </form>
+    </body>
+</html>
+
+{% endblock content %}
